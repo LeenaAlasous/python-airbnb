@@ -148,8 +148,20 @@ average_price_by_neighborhood = listings.groupby('neighbourhood')['price'].mean(
 print("Average Price by Neighborhood:")
 print(average_price_by_neighborhood.head(10))
 ```
+<img src="https://github.com/user-attachments/assets/7de1bf44-1e70-457c-93cf-0f66ebe4e8eb" alt="Value Counts Output" width="600"/>
 
-git commit --amend
+
+## Q2. Count the number of listings by room type
+```python
+listings_by_room_type = listings['room_type'].value_counts()
+print("Number of Listings by Room Type:")
+print(listings_by_room_type)
+```
+
+<img src="https://github.com/user-attachments/assets/71a0144d-ab04-40ce-98e5-81c83b376747" alt="Value Counts Output" width="600"/>
+
+
+
 
 
  
